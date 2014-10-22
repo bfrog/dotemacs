@@ -5,6 +5,8 @@
               (server-start))))
 
 
+(set-frame-font "terminus-12")
+
 ;; move cursor to the last position upon open
 (require 'saveplace)
 (setq save-place-file (concat dotemacs-cache-directory "places"))
@@ -19,6 +21,9 @@
 (setq-default history-length 1000)
 (savehist-mode +1)
 
+;; persistent undo
+(require 'undo-tree)
+(setq undo-tree-auto-save-history t)
 
 ;; recent files
 (require 'recentf)
@@ -32,7 +37,6 @@
 
 ;; erc
 (setq erc-log-channels-directory (concat dotemacs-cache-directory "erc/logs"))
-
 
 ;; vc
 (setq vc-make-backup-files t)
@@ -123,7 +127,6 @@
 (set-keyboard-coding-system 'utf-8)
 (set-selection-coding-system 'utf-8)
 (prefer-coding-system 'utf-8)
-
 
 (setq sentence-end-double-space nil)
 (setq delete-by-moving-to-trash t)

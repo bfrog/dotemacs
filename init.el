@@ -41,8 +41,8 @@
     ;; init-autopair
 
     init-yasnippet
-    ;; init-auto-complete
-    init-company
+    init-auto-complete
+    ;;init-company
 
     init-projectile
     init-helm
@@ -54,7 +54,7 @@
     init-vim
     init-stylus
     init-js
-    ;; init-go
+    init-go
     init-web
     init-lisp
     init-markdown
@@ -64,7 +64,9 @@
     init-bindings
     init-macros
 
-    init-overrides)
+    init-overrides
+    init-solarized
+    )
   "Set of modules enabled in dotemacs."
   :group 'dotemacs)
 

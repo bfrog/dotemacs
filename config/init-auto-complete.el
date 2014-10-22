@@ -16,6 +16,10 @@
 
 (ac-config-default)
 
+;;; set the trigger key so that it can work together with yasnippet on the tab key
+(ac-set-trigger-key "TAB")
+(ac-set-trigger-key "<tab>")
+
 (after 'linum
   (ac-linum-workaround))
 

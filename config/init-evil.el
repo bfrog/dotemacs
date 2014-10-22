@@ -26,7 +26,7 @@
 (require-package 'evil-jumper)
 
 (require 'evil)
-(require 'evil-nerd-commenter)
+;;;(require 'evil-nerd-commenter)
 (require 'evil-indent-textobject)
 (require 'evil-visualstar)
 (require 'evil-jumper)
@@ -92,4 +92,9 @@
 (defadvice evil-ex-search-previous (after advice-for-evil-ex-search-previous activate)
   (recenter))
 
+(evil-ex-define-cmd "cn[ext]" 'next-error)
+(evil-ex-define-cmd "cp[revious]" 'previous-error)
+(evil-ex-define-cmd "make" 'compile)
+
 (provide 'init-evil)
+
