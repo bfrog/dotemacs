@@ -6,7 +6,7 @@ this is a emacs configuration targeted for vim users.
 install
 =======
 
-`git clone https://github.com/bling/dotemacs.git ~/.emacs.d`
+`git clone https://github.com/bfrog/dotemacs.git ~/.emacs.d`
 
 disclaimer
 ==========
