@@ -57,6 +57,7 @@
     init-go
     init-web
     init-lisp
+    init-php
     init-markdown
 
     init-misc
